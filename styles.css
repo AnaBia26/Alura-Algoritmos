@@ -1,0 +1,106 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 90%;
+}
+
+/* Estilo dos Passos */
+.passo {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Botões */
+button {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    color: #00d4ff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1a2980, #26d0ce);
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Rolagem personalizada */
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #00d4ff, #090979);
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        max-height: 100%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

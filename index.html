@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>O Enigma de Kepler-22b</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-inicial.png" alt="Nave espacial orbitando Kepler-22b">
+            <p>Você é o comandante da nave *Aurora*. Depois de meses viajando pelo espaço, sua tripulação finalmente alcançou o planeta Kepler-22b. Sinais misteriosos estão vindo da superfície. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="1">Enviar uma sonda</button>
+            <button class="btn-proximo" data-proximo="2">Aterrissar com a nave</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>A sonda revela um terreno cheio de cristais brilhantes que emitem uma energia desconhecida. No centro do vale, há uma estrutura alienígena.</p>
+            <button class="btn-proximo" data-proximo="3">Investigar a estrutura</button>
+            <button class="btn-proximo" data-proximo="4">Coletar amostras dos cristais</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Ao aterrissar, a nave sofre um impacto por causa de uma tempestade magnética. Você precisa decidir rapidamente.</p>
+            <button class="btn-proximo" data-proximo="5">Reparar a nave</button>
+            <button class="btn-proximo" data-proximo="6">Explorar os arredores</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Dentro da estrutura, você encontra inscrições que sugerem que Kepler-22b era um posto avançado para uma antiga civilização galáctica.</p>
+            <button class="btn-proximo" data-proximo="7">Decifrar as inscrições</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Os cristais possuem uma energia poderosa, mas instável. Um cristal começa a emitir pulsos que interferem na nave.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar para a nave</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Com a nave reparada, você decide continuar sua missão. Novos dados apontam para outra estrutura no hemisfério oposto do planeta.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a nova estrutura</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Explorando os arredores, você descobre um robô antigo que parece ser um guia da civilização desaparecida.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir o robô até a estrutura</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/estrutura-alienigena.png" alt="Uma estrutura alienígena iluminada por cristais brilhantes">
+            <p>Você desvenda o enigma de Kepler-22b: era uma estação de pesquisa de energia avançada. Com sua descoberta, o universo nunca mais será o mesmo.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
